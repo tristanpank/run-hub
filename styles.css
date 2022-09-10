@@ -61,4 +61,27 @@ body {
 .main2 {
     min-height: 100vh;
     background-color: rgb(133, 133, 137);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.about {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.pic2 {
+    grid-area: 1 / 2 / 3 / 5;
+    height: 100px;
+    width: auto;
+}
+
+.pic2 img {
+    height: 500px;
+    width: auto;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
 }
