@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    position: relative;
+}
+
+.video {
+    overflow: hidden;
+    position: relative;
+}
+
+.video video {
+    margin-bottom: -7.5%;
+    margin-top: -7.5%;
+    width: 100vw;
+    position: relative;
+    z-index: 0;
+}
+
+.main1 .video-overlay {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    color: white;
+    min-width: 100vw;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -7.5%;
+}
+
+.overlay-text-header {
+    font-size: 6rem;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 4rem;
+}
+
+/* .blur-video {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#blur-video {
+    filter: blur(20px);
+    object-fit: fill;
+} */
