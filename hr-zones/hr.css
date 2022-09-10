@@ -2,6 +2,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background-image: url(forest.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vw;
+    justify-content: center;
+    align-items: center;
 }
 
 #hr-zones-form {
@@ -9,6 +15,11 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    background-color: forestgreen;
+    border-radius: 8px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding: 20px;
 }
 
 .form-container {
@@ -22,13 +33,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: forestgreen;
     margin-left: 25vw;
     margin-right: 25vw;
     gap: 20px;
     border-radius: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .zone-section {
@@ -42,9 +52,12 @@ body {
 .zone-section-value {
     min-width: 100px;
     min-height: 20px;
-    background-color: blue;
+    background-color: white;
     color: white;
     border-radius: 8px;
     text-align: center;
 }
 
+.zone-section-title, label {
+    font-weight: 600;
+}
