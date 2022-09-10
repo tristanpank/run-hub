@@ -7,7 +7,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: gray;
+    background-color: rgb(1, 1, 1);
     position: relative;
 }
 
@@ -57,3 +57,8 @@ body {
     filter: blur(20px);
     object-fit: fill;
 } */
+
+.main2 {
+    min-height: 100vh;
+    background-color: rgb(133, 133, 137);
+}
