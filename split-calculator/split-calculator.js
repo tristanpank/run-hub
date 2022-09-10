@@ -1,6 +1,5 @@
 
 console.log('test');
-document.body.innerHTML = "<h1>Today's date </h1>"
 let dist = 5
 let dist_unit = 'km'
 let output_unit = 'km'
