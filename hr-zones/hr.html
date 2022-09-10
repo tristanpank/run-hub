@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Hub</title>
+    <link rel="stylesheet" href="./hr.css">
+</head>
+<body>
+    <form id="hr-zones-form">
+        <label for="max-hr">Enter Maximum Heart Rate:</label>
+        <input type="number" id="max-hr" value="0">
+        <button type="button" id="hr-submit">Calculate</button>
+    </form>
+    <div id="zone-displays">
+        <div class="zone-section">
+            <div class="zone-section-title">Zone 1</div>
+            <div class="zone-section-value" id="zone1"></div>
+        </div>
+        <div class="zone-section">
+            <div class="zone-section-title">Zone 2</div>
+            <div class="zone-section-value" id="zone2"></div>
+        </div>
+        <div class="zone-section">
+            <div class="zone-section-title">Zone 3</div>
+            <div class="zone-section-value" id="zone3"></div>
+        </div>
+        <div class="zone-section">
+            <div class="zone-section-title">Zone 4</div>
+            <div class="zone-section-value" id="zone4"></div>
+        </div>
+        <div class="zone-section">
+            <div class="zone-section-title">Zone 5</div>
+            <div class="zone-section-value" id="zone5"></div>
+        </div>
+    </div>
+    <script src="./hr.js"></script>
+</body>
+</html>
