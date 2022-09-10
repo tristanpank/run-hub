@@ -1,6 +1,15 @@
-ul {
+body {
+    font-family: Inter, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(228, 228, 228);
+}
+
+.header ul {
     list-style: none;
     color: white;
+    padding: 0px;
+    margin: 0px;
 }
 
 .header {
@@ -32,23 +41,65 @@ ul {
 .top_3_blocks .right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 180px;
+    min-height: 100vh;
 }
+
+.left .question {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+
 
 .page4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 .blocks .page1, .page2, .page3, .page4 {
-    background-color: #001F3F;
     color: white;
     border-radius: 8px;
+}
+
+.page4 {
+    color: black;
+    padding-bottom: 50px;
+    /* change color once you add content */
+}
+
+.top_3_blocks .left {
+    min-height: 100vh;
+}
+
+.description {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page1 {
+    background-color: #001F3F;
+    padding: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    font-size: 20px;
+}
+
+.left .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.left .title {
+    font-size: 30px;
+    font-weight: 800;
 }
 
 .blocks {
@@ -57,16 +108,59 @@ ul {
     gap: 70px;
 }
 
-.page1 {
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-top: 500px;
-    padding-bottom: 500px;
+.pic1 {
+    position: relative;
+    text-align: center;
 }
 
-.page2, .page3 {
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+.pic1 .page2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.pic1 img {
+    border-radius: 8px;
+    height: 500px;
+    width: 450px;
+    object-fit: none;
+}
+
+.pic2 img{
+    border-radius: 8px;
+}
+
+.pic2 {
+    position: relative;
+    text-align: center;
+}
+
+.pic2 .page3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
+
+.pic1, .pic2, .pic3, .page1 {
+    transition: all 0.3s ease-in-out;  
+}
+
+.pic1:hover, .pic2:hover, .pic3:hover, .page1:hover {
+    transform: scale(1.05);
 }
